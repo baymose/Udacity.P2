@@ -26,15 +26,19 @@ var bio = {
 
         //Build mobile
         var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-        $("#header").append(formattedMobile);
+        $("#topContacts").append(formattedMobile);
+        $("#footerContacts").append(formattedMobile);
 
         //Build email
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-        $("#header").append(formattedEmail);
+        $("#topContacts").append(formattedEmail);
+        $("#foooterContacts").append(formattedEmail);
 
         //Build github
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        $("#header").append(formattedGithub);
+        $("#footerContacts").append(formattedGithub);
+        $("#topContacts").append(formattedGithub);
+
         //Build Skills
         $("#header").append(HTMLskillsStart);
         for( var i=0; i < bio.skills.length; i++) {
@@ -44,9 +48,9 @@ var bio = {
         //Build Bio Pic
         var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
         $("#header").append(formattedBioPic);
+
     }
-}
-bio.display();
+};
 
 var education = {
     "schools": [
@@ -159,7 +163,7 @@ $(document).click(function(loc) {
         var x = event.clientX
         logClicks(x,y);
 });
-
+bio.display();
 work.display();
 projects.display();
 education.display();

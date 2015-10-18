@@ -29,15 +29,16 @@ var bio = {
         $("#topContacts").append(formattedMobile);
         $("#footerContacts").append(formattedMobile);
 
+
         //Build email
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
         $("#topContacts").append(formattedEmail);
-        $("#foooterContacts").append(formattedEmail);
+        $("#footerContacts").append(formattedEmail);
 
         //Build github
         var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-        $("#footerContacts").append(formattedGithub);
         $("#topContacts").append(formattedGithub);
+        $("#footerContacts").append(formattedGithub);
 
         //Build Skills
         $("#header").append(HTMLskillsStart);
@@ -58,8 +59,8 @@ var education = {
         "name": "Griswold Academy",
         "location": "Charlotte, NC",
         "degree": "PHD",
-        "majors": "Awesomness",
-        "date": "2014",
+        "majors": ["Awesomeness", "Being Cool"],
+        "date": 2014,
         "url": "bayg.me"
     }
     ],
@@ -67,7 +68,7 @@ var education = {
     {
         "title": "HTML, CSS Crash Course",
         "school": "Griswold University",
-        "date": "2014",
+        "date": 2014,
         "url": "bayg.me"
     }
     ],

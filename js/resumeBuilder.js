@@ -29,6 +29,14 @@ var bio = {
         $("#topContacts").append(formattedMobile);
         $("#footerContacts").append(formattedMobile);
 
+        var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+        $("#topContacts").append(formattedTwitter);
+        $("#footerContacts").append(formattedTwitter);
+
+        var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+        $("#topContacts").append(formattedLocation);
+        $("#footerContacts").append(formattedLocation);
+
 
         //Build email
         var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);

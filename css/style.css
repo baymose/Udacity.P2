@@ -18,6 +18,10 @@ h6 {
   overflow: auto;
 }
 
+.project-entry img {
+    width:20%;
+}
+
 .education-entry,
 .work-entry,
 .project-entry {
@@ -26,7 +30,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #2ecc71;
   line-height: 48px;
   display: inline;
 }
@@ -100,16 +104,16 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #2ecc71;
   display: none;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #2ecc71;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #2ecc71;
 }
 
 .white-text {
@@ -129,7 +133,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #34495e;
 }
 
 .flex-box {
